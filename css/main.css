@@ -825,6 +825,49 @@ th {
     width: 300px !important;
 }
 
+/* Linear Loader */
+    
+    .load-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #f3f3f3;
+        z-index: 99999;
+    }
+    
+    .bar {
+        content: "";
+        display: inline;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        text-align: center;
+        z-index: 99999;
+    }
+    
+    .bar:nth-child(1) {
+        background-color: #8cc83b;
+        animation: loading 2s linear infinite;
+    }
+    
+    @keyframes loading {
+        from {
+            left: 50%;
+            width: 0;
+            z-index: 100;
+        }
+        33.3333% {
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        to {
+            left: 0;
+            width: 100%;
+        }
+    }
+
 .primary-btn {
     position: relative;
     display: inline-block;

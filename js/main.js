@@ -39,6 +39,11 @@ $(document).ready(function () {
     }
   });
 
+    /* Preloader */
+
+        $(window).load(function () {
+            $('.preloader').delay(800).fadeOut('slow');
+        });
 
 
   // $('.navbar-nav>li>a').on('click', function(){
