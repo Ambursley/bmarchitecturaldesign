@@ -99,8 +99,11 @@ HesGallery.createDOM = function() {
   // Creates DOM Elements for gallery
   this.elements = {}
 
-  if (this.options.hostedStyles) document.head.innerHTML += "<link rel='stylesheet' href='https://unpkg.com/hes-gallery/dist/hes-gallery.min.css'>"
+  if (this.options.hostedStyles) document.head.innerHTML += "<link rel='stylesheet' href='http:ambursley.com/bmarchitecturaldesign/css/main.css'>"
 
+    /*
+    https://unpkg.com/hes-gallery/dist/hes-gallery.min.css */
+    
   const gal = document.createElement('div')
   gal.id = 'hgallery'
   gal.setAttribute('style', 'visibility:hidden;')
