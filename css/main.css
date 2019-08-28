@@ -150,7 +150,8 @@
        
        h4,
        .h4 {
-           font-size: 20px
+           font-size: 20px;
+           line-height: 28px !important;
        }
        
        h5,
@@ -1884,7 +1885,8 @@
        }
        
        .callto-area .call-wrap {
-           position: relative
+           position: relative;
+           padding: 0 20px 0 20px;
        }
        
        .callto-area h1 {
