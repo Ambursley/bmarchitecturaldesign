@@ -1630,10 +1630,12 @@
         border: 1px solid #8cc83b
     }
     
+/*
     .feature-item:hover h4 {
         color: #8cc83b
     }
-    
+*/    
+
     .about-area {
         background: #f7f7f7
     }
