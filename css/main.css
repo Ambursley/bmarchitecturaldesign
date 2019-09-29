@@ -1640,9 +1640,11 @@
 */
  
  .about-area {
-     background: #f7f7f7
- }
- 
+     background: url(../img/about-2-header-bg.jpg) no-repeat center center/cover;
+}
+
+
+
  @media (max-width: 991px) {
      .about-area .about-left {
          margin-bottom: 50px
@@ -1833,13 +1835,13 @@
  }
  
  .project-area .filters-content img {
-     border-radius: 10px;
-     width: 100%
+     border-radius: 4px;
+     width: 100%;
  }
  
  .single-project {
-     border-radius: 5px;
-     margin-bottom: 30px
+     border-radius: 8px;
+     margin-bottom: 30px;
  }
  
  .single-project .thumb .image {
@@ -1924,14 +1926,19 @@
  }
  
  .testimonial-area .owl-controls {
-     margin-top: 70px
+     margin-top: 30px
  }
  
+
  @media (max-width: 991px) {
      .testimonial-area .owl-controls {
-         display: none
+         margin-top: 0px;
+     }
+     .single-testimonial {
+     margin: 30px !important;
      }
  }
+
  
  .testimonial-area .owl-dots {
      text-align: center;
@@ -1945,8 +1952,8 @@
  }
  
  .testimonial-area .owl-dot {
-     height: 4px;
-     width: 20px;
+     height: 10px;
+     width: 10px;
      display: inline-block;
      background: rgba(127, 127, 127, 0.5);
      margin: 0px 10px;
@@ -1969,8 +1976,10 @@
  .single-testimonial {
      text-align: center;
      background-color: #fff;
-     padding: 30px;
-     border: 1px solid transparent;
+     padding: 20px;
+     margin: 0px;
+     border-radius: 8px;
+     border: 2px solid #eee;
      -webkit-transition: all 0.3s ease 0s;
      -moz-transition: all 0.3s ease 0s;
      -o-transition: all 0.3s ease 0s;
