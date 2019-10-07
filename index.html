@@ -55,6 +55,52 @@
     </div>
     <!-- Preloader End -->
 
+    <!-- Disable Right Click Start -->
+    <script language="JavaScript">
+        /**
+         * Disable right-click of mouse, F12 key, and save key combinations on page
+         */
+        window.onload = function() {
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function(e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        };
+    </script>
+    <!-- Disable Right Click End -->
+
     <!-- Start Header Area -->
     <header class="default-header">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -109,9 +155,9 @@
         </div>
         <div class="head-bottom-meta">
             <div class="d-flex meta-left no-padding">
-                <a href="#"><span class="fa fa-facebook-f"></span></a>
-                <a href="#"><span class="fa fa-twitter"></span></a>
-                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="https://www.facebook.com/bm_archdesign-423170538538901/"><span class="fa fa-facebook-f"></span></a>
+                <a href="https://linkedin.com/in/benjamin-mcfadgen-32b002a2?trk=pub-pbmap"><span class="fa fa-linkedin"></span></a>
+                <a href="https://www.instagram.com/bm_archdesign/"><span class="fa fa-instagram"></span></a>
             </div>
         </div>
     </section>
@@ -168,10 +214,10 @@
                 <div class="col-lg-6 col-md-12 about-right">
                     <div class="section-title text-left">
                         <h4>How We're Different</h4>
-                        <h2>Sustainability as a Focus</h2>
+                        <h2 style="color: #ffffff;">Sustainability as a Focus</h2>
                     </div>
                     <div>
-                        <p>
+                        <p style="color: #ffffff;">
                             BM Architectural Design prides itself in giving back to the planet by developing projects that support natural environments through building design, building function and construction practices.
                         </p>
                     </div>
@@ -280,6 +326,21 @@
                                     <div class="cat">In Development</div>
                                 </div>
                                 <a class="overlay" href="modern-farmhouse-custom-home.html"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 grid-item col-md-6 all development">
+                        <div class="single-project">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <img class="image img-fluid" src="img/projects/p11-waterdown-modern-remodel.jpg" alt="">
+                                </div>
+                                <div class="middle">
+                                    <h4>Waterdown Modern Remodel</h4>
+                                    <div class="cat">In Development</div>
+                                </div>
+                                <a class="overlay" href="waterdown-modern-remodel.html"></a>
                             </div>
                         </div>
                     </div>
@@ -545,9 +606,9 @@
 
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="#"><i class="fa fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/bm_archdesign-423170538538901/"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/benjamin-mcfadgen-32b002a2?trk=pub-pbmap"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bm_archdesign/"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>

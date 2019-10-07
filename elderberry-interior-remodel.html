@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hes-gallery.css">
-    
+
 
 
 </head>
@@ -46,6 +46,52 @@
 
     </div>
     <!-- Preloader End -->
+
+    <!-- Disable Right Click Start -->
+    <script language="JavaScript">
+        /**
+         * Disable right-click of mouse, F12 key, and save key combinations on page
+         */
+        window.onload = function() {
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function(e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        };
+    </script>
+    <!-- Disable Right Click End -->
 
     <!-- Start Header Area -->
     <header class="default-header">
@@ -89,21 +135,21 @@
     <div class="header-image-container">
         <div class="overlay overlay-bg"></div>
 
-       
-            <div class="post_img">
-                <img src="img/elderberry-header-bg.jpg" alt="">
+
+        <div class="post_img">
+            <img src="img/elderberry-header-bg.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="centered">
+
+
+                <h1>Elderberry Interior Renovations</h1>
+                <p><i class="fa fa-tags"></i> Completed</p>
+
+
+
             </div>
-            <div class="container">
-                <div class="centered">
-                    
 
-                    <h1>Elderberry Interior Renovations</h1>
-                    <p><i class="fa fa-tags"></i> Completed</p>
-
-
-
-                </div>
-            
 
         </div>
     </div>
@@ -125,10 +171,10 @@
                             </p>
                             <h3 class="mt-20 mb-20">Process</h3>
                             <p>
-                                These clients are a family who had a beautiful home and location, however they were not happy with the layout and flow of their house. It was important to create a layout that would meet their needs and allow them to keep their location while also having their dream home. This resulted in a complete remodel of the basement, main floor and second floor to create functional spaces that are open, airy and efficient. 
+                                These clients are a family who had a beautiful home and location, however they were not happy with the layout and flow of their house. It was important to create a layout that would meet their needs and allow them to keep their location while also having their dream home. This resulted in a complete remodel of the basement, main floor and second floor to create functional spaces that are open, airy and efficient.
                             </p>
-                            
-                                
+
+
 
                             <div class="row mt-30 mb-30 hes-gallery">
 
@@ -137,80 +183,79 @@
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-1.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-1.jpg" data-subtext=''>
 
                                 </div>
-                                
+
                                 <div class="col-4 mt-30 smaller-img">
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-11.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-11.jpg" data-subtext=''>
                                 </div>
-                                
-                                
+
+
                                 <div class="col-4 mt-30 smaller-img">
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-4.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-4.jpg" data-subtext=''>
                                 </div>
-                                
+
                                 <div class="col-4 mt-30 smaller-img">
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-12.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-12.jpg" data-subtext=''>
                                 </div>
-                                
+
                                 <div class="col-lg-12 mt-30  feature-img">
 
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-2.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-2.jpg" data-subtext=''>
 
                                 </div>
-                                
+
                                 <div class="col-4 mt-30 smaller-img">
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-10.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-10.jpg" data-subtext=''>
                                 </div>
-                                
+
                                 <div class="col-4 mt-30 smaller-img">
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-8.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-8.jpg" data-subtext=''>
                                 </div>
-                                
+
                                 <div class="col-4 mt-30 smaller-img">
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-9.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-9.jpg" data-subtext=''>
                                 </div>
-                                
+
                                 <div class="col-lg-12 mt-30  feature-img">
 
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-7.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-7.jpg" data-subtext=''>
 
                                 </div>
-                                
+
                                 <div class="col-lg-12 mt-30  feature-img">
 
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-5.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-5.jpg" data-subtext=''>
 
                                 </div>
-                                
+
                                 <div class="col-lg-12 mt-30  feature-img">
 
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-6.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-6.jpg" data-subtext=''>
 
                                 </div>
-                                
+
                                 <div class="col-lg-12 mt-30  feature-img">
 
                                     <img class="img-fluid" src="img/elderberry-interior-remodel/elderberry-interior-remodel-3.jpg" alt="" data-fullsize="img/elderberry-interior-remodel/elderberry-interior-remodel-3.jpg" data-subtext=''>
 
                                 </div>
-                               
-                               
-                              
-                                
-                                
-                                
-                                
-                                
-                                
+
+
+
+
+
+
+
+
 
 
                             </div>
-                            
+
                             <div class="story-footer ">
                                 <h4>Thanks for viewing! View our other projects.</h4>
                                 <a href="projects.html" class="genric-btn primary-border circle">Back to Portfolio</a>
                             </div>
 
-<!--
+                            <!--
                             <div class="row col-lg-12">
                                 <h3 class="mt-20 mb-20">Features</h3>
                                 <p>
@@ -316,7 +361,7 @@
                         <div class="single-sidebar-widget newsletter-widget">
                             <h4 class="newsletter-title">Newsletter</h4>
                             <p>
-                                Sign up to our newsletter to stay updated on our projects. 
+                                Sign up to our newsletter to stay updated on our projects.
                             </p>
                             <div class="form-group d-flex flex-row">
                                 <div class="col-autos">
@@ -331,7 +376,7 @@
                                 <a href="#" class="bbtns">Subcribe</a>
                             </div>
                             <p class="text-bottom">
-                                
+
                             </p>
                         </div>
                     </div>
@@ -343,7 +388,7 @@
 
     </section>
     <!-- End post-content Area -->
-    
+
     <!-- Start callto Area -->
     <section class="callto-area section-gap relative">
         <div class="overlay overlay-bg"></div>
@@ -394,18 +439,18 @@
                         <li><a href="projects.html">Portfolio</a></li>
                         <li><a href="sustainability-as-a-focus.html">Sustainable Design</a></li>
                         <li><a href="about.html">Our Story</a></li>
-                        
+
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 single-footer-widget">
-                  <h4 style="color: #0e1424"><br></h4>
+                    <h4 style="color: #0e1424"><br></h4>
                     <ul>
-                        
+
                         <li><a href="services.html">Services</a></li>
                         <li><a href="process.html">Process</a></li>
                         <li><a href="contact.html">Get In Touch</a></li>
-                       
+
                     </ul>
                 </div>
 
@@ -435,9 +480,9 @@
 
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="#"><i class="fa fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/bm_archdesign-423170538538901/"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/benjamin-mcfadgen-32b002a2?trk=pub-pbmap"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bm_archdesign/"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>

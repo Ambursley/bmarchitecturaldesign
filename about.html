@@ -43,6 +43,52 @@
     </div>
     <!-- Preloader End -->
 
+    <!-- Disable Right Click Start -->
+    <script language="JavaScript">
+        /**
+         * Disable right-click of mouse, F12 key, and save key combinations on page
+         */
+        window.onload = function() {
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function(e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        };
+    </script>
+    <!-- Disable Right Click End -->
+
     <!-- Start Header Area -->
     <header class="default-header">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -293,10 +339,10 @@
                 <div class="col-lg-6 col-md-12 about-right">
                     <div class="section-title text-left">
                         <h4>How We're Different</h4>
-                        <h2>Sustainability as a Focus</h2>
+                        <h2 style="color: #ffffff;">Sustainability as a Focus</h2>
                     </div>
                     <div>
-                        <p>
+                        <p style="color: #ffffff;">
                             BM Architectural Design prides itself in giving back to the planet by developing projects that support natural environments through building design, building function and construction practices.
                         </p>
                     </div>
@@ -305,7 +351,7 @@
             </div>
         </div>
     </section>
-   
+
     <!-- End About Area -->
 
     <!-- Start testimonial Area -->
@@ -445,18 +491,18 @@
                         <li><a href="projects.html">Portfolio</a></li>
                         <li><a href="sustainability-as-a-focus.html">Sustainable Design</a></li>
                         <li><a href="about.html">Our Story</a></li>
-                        
+
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 single-footer-widget">
-                  <h4 style="color: #0e1424"><br></h4>
+                    <h4 style="color: #0e1424"><br></h4>
                     <ul>
-                        
+
                         <li><a href="services.html">Services</a></li>
                         <li><a href="process.html">Process</a></li>
                         <li><a href="contact.html">Get In Touch</a></li>
-                       
+
                     </ul>
                 </div>
 
@@ -486,9 +532,9 @@
 
                 </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="#"><i class="fa fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/bm_archdesign-423170538538901/"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/benjamin-mcfadgen-32b002a2?trk=pub-pbmap"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bm_archdesign/"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>
